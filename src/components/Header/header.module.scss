@@ -1,14 +1,49 @@
+@mixin list_item($just, $gap) {
+	@apply #{$just} gap-x-#{$gap} flex  items-center text-mainGray;
+}
+
+@mixin flex_basic(
+	$flex-direction: 'row',
+	$gap: 'x-2',
+	$just: 'justify-normal'
+) {
+	@apply flex-#{$flex-direction} gap-#{$gap}  #{$just} flex flex;
+	@content;
+}
+
 .header {
-	@apply sticky z-50  flex justify-between items-center my-4 font-semibold text-mainGray text-sm gap-3;
+	@apply sticky z-50 my-4 items-center text-sm font-semibold text-mainGray;
+
+	@include flex_basic('row', '3', 'justify-between');
 
 	&_phone {
-		@apply flex gap-x-3 items-center invisible lg:visible;
+		@apply hidden items-center gap-x-3 lg:flex;
 	}
 
 	&_list {
-		@apply flex xl:gap-x-7.5 lg:gap-x-5 invisible lg:visible;
-
+		@include flex_basic('row') {
+			@apply xl:gap-x-7.5;
+		}
 		& > li {
+			@include list_item('justify-between', '2');
+		}
+	}
+}
+
+.burger {
+	@apply container absolute -top-10 left-0  z-50 min-h-screen w-screen bg-white px-[10px] pt-10 lg:px-5;
+
+	&_header {
+		@include flex-basic('row', '2', 'justify-between') {
+			@apply py-[10px];
+		}
+	}
+
+	&_list {
+		@include flex_basic('col', 'y-4');
+		& > li {
+			@include list_item('justify-start', '1');
+			@apply text-base;
 		}
 	}
 }

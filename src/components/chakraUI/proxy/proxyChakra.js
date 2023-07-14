@@ -1,6 +1,21 @@
 'use client';
 
-import { Container } from '@chakra-ui/react';
-import { PhoneIcon } from '@chakra-ui/icons';
+import { CloseIcon, HamburgerIcon, PhoneIcon } from '@chakra-ui/icons';
+import {
+	Container,
+	Popover,
+	PopoverBody,
+	PopoverContent,
+	PopoverTrigger,
+} from '@chakra-ui/react';
 
-export { Container, PhoneIcon };
+export {
+	Container,
+	PhoneIcon,
+	HamburgerIcon,
+	CloseIcon,
+	Popover,
+	PopoverBody,
+	PopoverContent,
+	PopoverTrigger,
+};
