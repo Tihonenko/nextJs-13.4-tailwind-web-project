@@ -1,0 +1,14 @@
+.header {
+	@apply sticky z-50  flex justify-between items-center my-4 font-semibold text-mainGray text-sm gap-3;
+
+	&_phone {
+		@apply flex gap-x-3 items-center invisible lg:visible;
+	}
+
+	&_list {
+		@apply flex xl:gap-x-7.5 lg:gap-x-5 invisible lg:visible;
+
+		& > li {
+		}
+	}
+}
