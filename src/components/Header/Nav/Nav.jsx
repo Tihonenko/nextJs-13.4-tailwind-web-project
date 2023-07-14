@@ -14,6 +14,7 @@ export const Nav = ({ navData }) => {
 						<Link href={item.link}>{item.label} </Link>
 					</li>
 				))}
+				<div></div>
 			</ul>
 		</nav>
 	);
