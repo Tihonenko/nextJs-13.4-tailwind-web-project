@@ -112,7 +112,7 @@ export const Burger = ({ navData }) => {
 									reverse={isOpen ? 'false' : 'true'}
 									animate={isOpen ? 'visible' : 'hidden'}
 									exit='exit'
-									onClick={() => setIsOpen(prev => !prev)}
+									onClick={() => setIsOpen((prev) => !prev)}
 								>
 									<NavLink item={item} />
 								</motion.li>

@@ -2,10 +2,10 @@
 
 import { CacheProvider } from '@chakra-ui/next-js';
 import { ChakraProvider } from '@chakra-ui/react';
-
 // import { theme } from '@/app/GlobalProviders/ChakraTheme/ChakraTheme';
-
 import { extendTheme } from '@chakra-ui/react';
+
+import { switchTheme } from '@/components/UI/Checker/CheckerTheme';
 
 const colors = {
 	main: {
@@ -28,7 +28,11 @@ const sizes = {
 	},
 };
 
-export const theme = extendTheme({ colors, sizes });
+export const theme = extendTheme({
+	colors,
+	sizes,
+	components: { Switch: switchTheme },
+});
 
 export const Providers = ({ children }) => {
 	return (

@@ -31,7 +31,7 @@
 }
 
 .burger {
-	@apply container absolute -top-10 left-0  z-50 min-h-screen w-screen bg-white px-[10px] pt-10 lg:px-5;
+	@apply container absolute -top-10 left-0 z-50 h-full  min-h-screen w-full  bg-white px-[10px] pt-10 lg:px-5;
 
 	&_header {
 		@include flex-basic('row', '2', 'justify-between') {

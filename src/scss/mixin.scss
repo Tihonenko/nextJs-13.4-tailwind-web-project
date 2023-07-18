@@ -1,0 +1,3 @@
+@mixin transition-settings($delay: '150', $duration: '300', $easy: 'in-out') {
+	@apply delay-#{$delay} duration-#{$duration} ease-#{$easy} transition-all;
+}

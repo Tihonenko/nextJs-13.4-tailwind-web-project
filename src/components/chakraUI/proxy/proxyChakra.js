@@ -7,6 +7,7 @@ import {
 	PopoverBody,
 	PopoverContent,
 	PopoverTrigger,
+	Switch,
 } from '@chakra-ui/react';
 
 export {
@@ -18,4 +19,5 @@ export {
 	PopoverBody,
 	PopoverContent,
 	PopoverTrigger,
+	Switch,
 };

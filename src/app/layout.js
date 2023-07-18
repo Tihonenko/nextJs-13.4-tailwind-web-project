@@ -1,11 +1,7 @@
-'use client';
-
 import { Montserrat } from 'next/font/google';
-import { useEffect } from 'react';
 
 import Header from '@/components/Header/Header';
 
-// import SmoothScroll from '@/components/SmoothScroll/SmoothScroll';
 import './globals.scss';
 import { Providers } from '@/app/GlobalProviders/Providers';
 
@@ -22,11 +18,7 @@ const RootLayout = ({ children }) => {
 			<body className={montserrat.className}>
 				<Providers>
 					<Header />
-					<main
-						className='container'
-						data-scroll-container
-						data-scroll-speed
-					>
+					<main className='container'>
 						{/* <SmoothScroll> */}
 						{children}
 						{/* </SmoothScroll> */}

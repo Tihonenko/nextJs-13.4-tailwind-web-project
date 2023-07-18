@@ -1,7 +1,7 @@
 export const navData = [
 	{
 		id: 1,
-		link: '#home',
+		link: '#functionality',
 		label: 'Функционал',
 	},
 	{
