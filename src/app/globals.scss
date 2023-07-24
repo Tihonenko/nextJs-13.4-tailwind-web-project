@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+	--swiper-pagination-bullet: black;
+}
 .background {
 	background-color: #2f2f2f;
 }
@@ -9,4 +12,12 @@
 html {
 	--scroll-behavior: smooth !important;
 	scroll-behavior: smooth !important;
+}
+
+.swiper-pagination-bullet {
+}
+
+.swiper-pagination-bullet-active {
+	--swiper-pagination-color: black;
+	width: 20px;
 }

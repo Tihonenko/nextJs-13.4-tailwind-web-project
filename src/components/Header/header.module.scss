@@ -7,7 +7,7 @@
 	$gap: 'x-2',
 	$just: 'justify-normal'
 ) {
-	@apply flex-#{$flex-direction} gap-#{$gap}  #{$just} flex flex;
+	@apply flex-#{$flex-direction} gap-#{$gap}  #{$just} flex;
 	@content;
 }
 

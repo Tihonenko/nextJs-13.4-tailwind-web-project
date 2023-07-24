@@ -12,7 +12,9 @@
     "@chakra-ui/icons": "^2.0.19",
     "@chakra-ui/next-js": "^2.1.4",
     "@chakra-ui/react": "^2.7.1",
+    "@emotion/cache": "^11.11.0",
     "@emotion/react": "^11.11.1",
+    "@emotion/server": "^11.11.0",
     "@emotion/styled": "^11.11.0",
     "@trivago/prettier-plugin-sort-imports": "^4.1.1",
     "eslint": "8.44.0",
@@ -22,7 +24,9 @@
     "next": "13.4.9",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sass": "^1.63.6"
+    "sass": "^1.63.6",
+    "swiper": "^10.0.4",
+    "swr": "^2.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",

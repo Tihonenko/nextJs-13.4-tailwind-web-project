@@ -82,7 +82,10 @@ export const Burger = ({ navData }) => {
 
 	return (
 		<>
-			<button onClick={() => setIsOpen((prev) => !prev)}>
+			<button
+				className='lg:invisible'
+				onClick={() => setIsOpen((prev) => !prev)}
+			>
 				<HamburgerIcon boxSize={'25px'} />
 			</button>
 

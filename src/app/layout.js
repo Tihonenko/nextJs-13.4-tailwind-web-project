@@ -1,8 +1,10 @@
 import { Montserrat } from 'next/font/google';
+import { Suspense } from 'react';
 
 import Header from '@/components/Header/Header';
 
 import './globals.scss';
+import Loading from './loading';
 import { Providers } from '@/app/GlobalProviders/Providers';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
