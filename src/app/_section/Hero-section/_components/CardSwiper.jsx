@@ -9,7 +9,7 @@ const CardSwiper = ({ card }) => {
 	return (
 		<Card as='div' boxShadow='md' className='rounded-3xl p-6 text-left'>
 			<CardHeader p={0} mb='12px'>
-				<Heading as='h3' className='text-xl leading-6'>
+				<Heading as='h3' className='text-xl font-normal leading-6'>
 					{card.title}
 				</Heading>
 			</CardHeader>

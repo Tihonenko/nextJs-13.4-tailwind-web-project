@@ -1,5 +1,6 @@
 'use client';
 
+import { Suspense } from 'react';
 import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/scss';
@@ -20,7 +21,9 @@ const HeroSwiper = () => {
 			spaceBetween={20}
 			modules={[Pagination]}
 			slidesPerView={1.2}
-			pagination={true}
+			pagination={{
+				clickable: true,
+			}}
 			className='m-5'
 			breakpoints={{
 				768: {
