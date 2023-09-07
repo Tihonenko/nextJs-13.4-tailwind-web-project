@@ -2,18 +2,24 @@
 
 import { CacheProvider } from '@chakra-ui/next-js';
 import { ChakraProvider } from '@chakra-ui/react';
-// import { theme } from '@/app/GlobalProviders/ChakraTheme/ChakraTheme';
 import { extendTheme } from '@chakra-ui/react';
+import { Provider } from 'react-redux';
 
 import { switchTheme } from '@/components/UI/Checker/CheckerTheme';
+
+import { store } from '@/redux/store';
 
 const colors = {
 	main: {
 		Gray: {
 			900: '#444444',
+			800: '#5c5c5c',
 		},
 		Orange: '#FC891C',
-		White: '#F6FCFF',
+		White: {
+			900: '#F6FCFF',
+			800: '#e8e8e8',
+		},
 		Green: '#34C759',
 	},
 	text: {
@@ -36,9 +42,11 @@ export const theme = extendTheme({
 
 export const Providers = ({ children }) => {
 	return (
-		<CacheProvider>
-			<ChakraProvider theme={theme}>{children}</ChakraProvider>
-		</CacheProvider>
+		<Provider store={store}>
+			<CacheProvider>
+				<ChakraProvider theme={theme}>{children}</ChakraProvider>
+			</CacheProvider>
+		</Provider>
 	);
 };
 

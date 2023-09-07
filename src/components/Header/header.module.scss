@@ -12,7 +12,7 @@
 }
 
 .header {
-	@apply sticky z-50 my-4 items-center text-sm font-semibold text-mainGray;
+	@apply z-50 my-4 items-center text-sm font-semibold text-mainGray;
 
 	@include flex_basic('row', '3', 'justify-between');
 

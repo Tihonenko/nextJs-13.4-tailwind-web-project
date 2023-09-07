@@ -3,12 +3,14 @@
 import Link from 'next/link';
 import React from 'react';
 
+import { Box } from '@/components/chakraUI/proxy/proxyChakra';
+
 import { NavLink } from '../NavLink';
 import styles from '../header.module.scss';
 
 export const Nav = ({ navData }) => {
 	return (
-		<nav>
+		<Box as='div'>
 			<ul className={styles.header_list}>
 				{navData.map((item) => (
 					<li key={item.id}>
@@ -16,6 +18,6 @@ export const Nav = ({ navData }) => {
 					</li>
 				))}
 			</ul>
-		</nav>
+		</Box>
 	);
 };

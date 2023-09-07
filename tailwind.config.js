@@ -17,7 +17,7 @@ module.exports = {
 		container: {
 			center: true,
 			padding: {
-				DEFAULT: '10px',
+				DEFAULT: '7px',
 				lg: '20px',
 			},
 		},
@@ -25,6 +25,8 @@ module.exports = {
 		extend: {
 			colors: {
 				mainGray: '#444444',
+				textGray: '#535353',
+				lightWhite: '#e8e8e8',
 				mainGreen: '#34C759',
 				mainWhite: '#F6FCFF',
 				mainOrange: '#FC891C',

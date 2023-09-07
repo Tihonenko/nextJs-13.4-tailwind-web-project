@@ -1,18 +1,20 @@
 'use client';
 
 import { Suspense } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/scss';
 import 'swiper/scss/pagination';
-import useSWR from 'swr';
 
 import CardSwiper from './CardSwiper';
 import Loading from '@/app/loading';
+import { getCardsSWR } from '@/redux/slices/cardSlice';
 import { getAllCard } from '@/service/getAllCard';
 
 const HeroSwiper = () => {
-	const { data: card, isLoading } = useSWR('card', getAllCard);
+	const { isLoading } = getCardsSWR();
+	const data = useSelector((state) => state.card.data);
 
 	if (isLoading) return <Loading />;
 
@@ -31,8 +33,8 @@ const HeroSwiper = () => {
 				},
 			}}
 		>
-			{card.map((card, idx) => (
-				<SwiperSlide key={idx}>
+			{data.map((card, idx) => (
+				<SwiperSlide key={idx} className='pb-3'>
 					<CardSwiper card={card} />
 				</SwiperSlide>
 			))}

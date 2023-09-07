@@ -21,17 +21,17 @@ export const CardChecker = ({ className, card }) => {
 			<Popover isOpen={isOpen} placement='top'>
 				<PopoverTrigger key={Checker}>
 					<button className={className}>
-						<Checker checked={setIsOpen}>{card.title}</Checker>
+						<Checker checked={setIsOpen}>{card?.title}</Checker>
 					</button>
 				</PopoverTrigger>
-				<PopoverContent as='div' width={'auto'} p='24px'>
+				<PopoverContent width={'auto'} p='24px'>
 					<PopoverHeader>
 						<Heading as='h3' className='text-xl font-normal'>
-							{card.title}
+							{card?.title}
 						</Heading>
 					</PopoverHeader>
 					<PopoverBody width='310px'>
-						<p className='text-mainGray'>{card.description}</p>
+						<p className='text-mainGray'>{card?.description}</p>
 					</PopoverBody>
 				</PopoverContent>
 			</Popover>

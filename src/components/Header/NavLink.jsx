@@ -26,11 +26,10 @@ export const NavLink = ({ item }) => {
 	return (
 		<>
 			<Link
-				as={item.link}
 				onMouseEnter={() => setIsHover((prev) => !prev)}
 				onMouseLeave={() => setIsHover((prev) => !prev)}
 				className=''
-				href={item.link}
+				href={`/${item.link}`}
 			>
 				{item.label}
 			</Link>

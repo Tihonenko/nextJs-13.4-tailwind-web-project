@@ -1,14 +1,18 @@
 'use client';
 
 import Image from 'next/image';
-import { Suspense } from 'react';
 
 import { CardChecker } from '@/components/CardChecker/CardChecker';
 import { PriceButton } from '@/components/UI/PriceButton/PriceButton';
+import {
+	Box,
+	Center,
+	Flex,
+	Heading,
+	Text,
+} from '@/components/chakraUI/proxy/proxyChakra';
 
 import HeroSwiper from './_components/HeroSwiper';
-import Loading from '@/app/loading';
-import { getAllCard } from '@/service/getAllCard';
 
 export const card = [
 	{
@@ -57,23 +61,34 @@ export const card = [
 
 const HeroSection = () => {
 	return (
-		<section
-			id='functionality'
-			className='relative  mt-3 flex flex-col items-center overflow-hidden pt-16'
+		<Center
+			as={'section'}
+			id='home'
+			className='relative  mt-12 flex flex-col items-center overflow-hidden pt-16'
 		>
-			<div className='flex flex-col items-center gap-8'>
-				<div className='flex flex-col items-center gap-3'>
-					<h1 className='w-auto text-center text-5xl font-bold lg:text-[68px] lg:leading-[66px]'>
+			<Flex
+				as='div'
+				flexDirection={'column'}
+				alignItems={'center'}
+				gap={'32px'}
+			>
+				<Box as='div' className='flex flex-col items-center gap-3'>
+					<Heading
+						as='h1'
+						textAlign={'center'}
+						fontWeight={'bold'}
+						className='w-auto text-5xl lg:text-[68px] lg:leading-[66px]'
+					>
 						Умный дом
 						<br /> под ключ
-					</h1>
-					<p className='text-center text-base'>
+					</Heading>
+					<Text as='p' textAlign='center' className='text-base'>
 						российский производитель
 						<br /> современной электрики
-					</p>
-				</div>
+					</Text>
+				</Box>
 				<PriceButton>Расчитать стоймость</PriceButton>
-			</div>
+			</Flex>
 			{card.map((card, idx) => (
 				<CardChecker
 					key={idx}
@@ -81,15 +96,15 @@ const HeroSection = () => {
 					card={card}
 				/>
 			))}
-			<div className='-z-10 hidden w-1/2  lg:flex lg:h-[700px] xl:h-[1000px]'>
+			<Box className='-z-10 hidden w-1/2  lg:flex lg:h-[700px] xl:h-[1000px]'>
 				<Image
 					src='/home/home.png'
 					className='-z-10  lg:translate-y-8 xl:-translate-y-6'
 					alt='home'
 					fill
 				/>
-			</div>
-			<div className='absolute top-0 -z-20  h-[75%] w-full rounded-3xl bg-[#EBE7E6] md:h-[85%]  lg:block lg:h-[95%]' />
+			</Box>
+			<Box className='absolute top-0 -z-20  h-[75%] w-full rounded-3xl bg-[#EBE7E6] md:h-[85%]  lg:block lg:h-[95%]' />
 
 			<Image
 				src='/home/home.png'
@@ -98,10 +113,10 @@ const HeroSection = () => {
 				width={400}
 				height={445}
 			/>
-			<div className='w-full lg:hidden'>
+			<Box width={'full'} className='pb-2 lg:hidden'>
 				<HeroSwiper />
-			</div>
-		</section>
+			</Box>
+		</Center>
 	);
 };
 
