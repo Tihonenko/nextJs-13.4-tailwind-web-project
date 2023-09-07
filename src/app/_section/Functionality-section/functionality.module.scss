@@ -14,11 +14,14 @@
 	&_list {
 		& > ul {
 			@apply mt-2;
-		}
 
-		& > li {
-			@apply text-sm leading-[21px] lg:text-base;
+			& > li {
+				@apply text-sm leading-[21px] text-textGray lg:text-base;
+			}
 		}
+	}
+	& > ul > li {
+		@apply text-textGray;
 	}
 }
 

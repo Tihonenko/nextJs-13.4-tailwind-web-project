@@ -77,7 +77,7 @@ const HeroSection = () => {
 						as='h1'
 						textAlign={'center'}
 						fontWeight={'bold'}
-						className='w-auto text-5xl lg:text-[68px] lg:leading-[66px]'
+						className='w-auto font-main text-5xl lg:text-[68px] lg:leading-[66px]'
 					>
 						Умный дом
 						<br /> под ключ

@@ -13,6 +13,7 @@ import ClimateCard from './_components/ClimateCard/ClimateCard';
 import CurtainsCard from './_components/CurtainsCard/CurtainsCard';
 import ElectrCard from './_components/ElectrCard/ElectrCard';
 import LightingCard from './_components/LightingCard/LightingCard';
+import MediaCard from './_components/MediaCard/MediaCard';
 import SecurityCard from './_components/SecurityCard/SecurityCard';
 import styles from './functionality.module.scss';
 
@@ -45,6 +46,7 @@ const Functionality = () => {
 				<ClimateCard />
 				<CurtainsCard />
 			</Flex>
+			<MediaCard />
 		</Center>
 	);
 };

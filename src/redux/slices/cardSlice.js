@@ -1,5 +1,4 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { List, Map, fromJS } from 'immutable';
 import { useDispatch } from 'react-redux';
 import useSWR from 'swr';
 

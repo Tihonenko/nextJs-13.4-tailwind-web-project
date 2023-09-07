@@ -21,6 +21,9 @@ module.exports = {
 				lg: '20px',
 			},
 		},
+		fontFamily: {
+			main: 'var(--main-font)',
+		},
 
 		extend: {
 			colors: {
