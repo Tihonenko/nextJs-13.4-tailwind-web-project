@@ -28,5 +28,5 @@
 
 .card_secondary {
 	@extend .card;
-	@apply -z-20 h-[340px] w-full;
+	@apply -z-20 min-h-[340px] w-full;
 }

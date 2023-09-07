@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import {
 	Box,
 	Flex,
@@ -26,6 +28,22 @@ const SecurityCard = () => {
 					<ListItem>Видеонаблюдение</ListItem>
 					<ListItem>Домофония</ListItem>
 				</UnorderedList>
+				<Box className='absolute right-16 top-40 -z-10 w-[175px] md:w-[200px]'>
+					<Image
+						src='/home/security-1.png'
+						width={200}
+						height={200}
+						alt='security'
+					/>
+				</Box>
+				<Box className='absolute right-10 top-12 -z-10 w-[82px] md:w-[102px]'>
+					<Image
+						src='/home/security-camera.png'
+						width={168}
+						height={168}
+						alt='camera'
+					/>
+				</Box>
 			</Box>
 		</Flex>
 	);
