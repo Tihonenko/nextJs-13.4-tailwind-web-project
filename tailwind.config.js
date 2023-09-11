@@ -33,6 +33,7 @@ module.exports = {
 				mainGreen: '#34C759',
 				mainWhite: '#F6FCFF',
 				mainOrange: '#FC891C',
+				lightBlue: '#00B7FF',
 			},
 
 			gap: {

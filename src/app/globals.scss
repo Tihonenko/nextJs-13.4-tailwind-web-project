@@ -21,3 +21,17 @@ html {
 	--swiper-pagination-color: black;
 	width: 20px;
 }
+
+@layer components {
+	.button-price {
+		@apply rounded-xl bg-mainGray px-7 py-2 text-white;
+
+		&:hover {
+			@apply bg-[#2a2a2a];
+		}
+
+		&:active {
+			@apply bg-lightBlue;
+		}
+	}
+}

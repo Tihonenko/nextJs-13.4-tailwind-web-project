@@ -65,7 +65,7 @@ const MediaCard = () => {
 						/>
 					))}
 				</Box>
-				<Box className='absolute -right-6 top-36 -z-10 w-[225px] md:-right-32 md:top-20 lg:w-[400px]'>
+				<Box className='absolute -right-6 top-36 -z-10 w-[225px] md:-right-32 md:top-20 md:w-[400px]'>
 					<Image
 						src='/home/Media.png'
 						width={570}

@@ -37,6 +37,10 @@ const sizes = {
 export const theme = extendTheme({
 	colors,
 	sizes,
+	fonts: {
+		heading: 'var(--main-font)',
+		body: 'var(--main-font)',
+	},
 	components: { Switch: switchTheme },
 });
 

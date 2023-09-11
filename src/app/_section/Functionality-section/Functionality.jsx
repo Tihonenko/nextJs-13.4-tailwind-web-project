@@ -19,7 +19,13 @@ import styles from './functionality.module.scss';
 
 const Functionality = () => {
 	return (
-		<Center display={'block'} as='section' id='functionality' mt={'90px'}>
+		<Center
+			display={'block'}
+			as='section'
+			id='functionality'
+			mt={'90px'}
+			className='font-main'
+		>
 			<Flex flexDirection={'column'} alignItems={'center'} gap={'20px'}>
 				<SubTitle>функционал</SubTitle>
 				<Flex flexDirection={'column'} gap={'10px'}>

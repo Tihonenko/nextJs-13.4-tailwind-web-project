@@ -1,13 +1,13 @@
 import { Box, Heading } from '@/components/chakraUI/proxy/proxyChakra';
 
-const SubTitle = ({ children }) => {
+const SubTitle = ({ children, opacity }) => {
 	return (
 		<Box
 			as='div'
 			px={'14px'}
 			py={'6px'}
 			width={'auto'}
-			background={'main.White.800'}
+			background='main.White.800'
 			rounded={'40px'}
 		>
 			<Heading
@@ -16,6 +16,7 @@ const SubTitle = ({ children }) => {
 				size='xs'
 				as='h6'
 				lineHeight={'20px'}
+				className='font-main'
 			>
 				{children}
 			</Heading>
