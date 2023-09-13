@@ -23,11 +23,7 @@ const RootLayout = ({ children }) => {
 			<body className={`${montserrat.className} ${montserrat.variable}}`}>
 				<Providers>
 					<Header />
-					<main className='container'>
-						{/* <SmoothScroll> */}
-						{children}
-						{/* </SmoothScroll> */}
-					</main>
+					<main className='container'>{children}</main>
 				</Providers>
 			</body>
 		</html>

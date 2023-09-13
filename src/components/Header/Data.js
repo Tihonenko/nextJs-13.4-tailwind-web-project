@@ -6,8 +6,8 @@ export const navData = [
 	},
 	{
 		id: 2,
-		link: '#equipment',
-		label: 'Оборудование',
+		link: '#control',
+		label: 'Управление',
 	},
 
 	{

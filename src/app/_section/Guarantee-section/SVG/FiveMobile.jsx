@@ -78,7 +78,7 @@ const FiveMobile = () => {
 				r='234.717'
 				transform='matrix(0.866025 -0.5 0.866025 0.5 -173 235.217)'
 				stroke='#212121'
-				stroke-dasharray='5 5'
+				strokeDasharray='5 5'
 			/>
 			<circle
 				cx='11'
