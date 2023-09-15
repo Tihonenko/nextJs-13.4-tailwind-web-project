@@ -39,6 +39,9 @@ module.exports = {
 			gap: {
 				7.5: '30px',
 			},
+			spacing: {
+				120: '120px',
+			},
 		},
 	},
 	plugins: [],

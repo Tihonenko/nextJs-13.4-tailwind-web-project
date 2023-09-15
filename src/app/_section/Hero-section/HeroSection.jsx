@@ -62,7 +62,7 @@ export const card = [
 const HeroSection = () => {
 	return (
 		<Center
-			as={'section'}
+			as='section'
 			id='home'
 			className='relative  mt-12 flex flex-col items-center overflow-hidden pt-16'
 		>

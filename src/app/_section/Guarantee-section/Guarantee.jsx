@@ -23,6 +23,7 @@ const Guarantee = () => {
 	return (
 		<Flex className='relative mt-20 h-[755px] flex-col  overflow-hidden rounded-[30px] pb-5 pt-6 sm:h-auto sm:flex-row '>
 			<Center
+				as='section'
 				flexDirection='column'
 				gap='6'
 				className='gap-3 sm:ml-4 sm:w-1/2 sm:items-baseline md:ml-10'
@@ -64,7 +65,7 @@ const Guarantee = () => {
 			<Box className='-z-10 sm:absolute  sm:-right-20 sm:-top-6 sm:-translate-x-0 sm:rotate-[2deg] sm:scale-[.85] md:rotate-0'>
 				{isAboveSmallQuery ? <FiveDesktop /> : <FiveMobile />}
 			</Box>
-			<Box className='absolute top-0 -z-30 w-full sm:-top-24 sm:rotate-90 md:-top-10 lg:top-0 lg:rotate-0 lg:scale-105 '>
+			<Box className='guarantee_image_box'>
 				<Image
 					src='/home/GuaranteeMobile.png'
 					alt='background'

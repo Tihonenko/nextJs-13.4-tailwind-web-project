@@ -34,4 +34,16 @@ html {
 			@apply bg-lightBlue;
 		}
 	}
+
+	.guarantee_image_box {
+		@apply absolute top-10 -z-30 w-full scale-150 sm:-top-24 sm:rotate-90 md:-top-10 lg:top-0 lg:rotate-0 lg:scale-105;
+	}
+
+	.automaticall_card {
+		@apply mt-3 rounded-2xl bg-white/30 backdrop-blur-md;
+
+		&_little {
+			@apply rounded-xl bg-white/10 px-2 py-1 text-sm font-medium;
+		}
+	}
 }
