@@ -1,6 +1,6 @@
 import { Box, Heading } from '@/components/chakraUI/proxy/proxyChakra';
 
-const SubTitle = ({ children, opacity }) => {
+const SubTitle = ({ children }) => {
 	return (
 		<Box
 			as='div'

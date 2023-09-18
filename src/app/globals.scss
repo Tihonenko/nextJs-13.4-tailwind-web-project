@@ -46,4 +46,13 @@ html {
 			@apply rounded-xl bg-white/10 px-2 py-1 text-sm font-medium;
 		}
 	}
+
+	.gradient_dark::before {
+		background: linear-gradient(
+				180deg,
+				rgba(0, 0, 0, 0) 26.75%,
+				rgba(0, 0, 0, 0.7) 100%
+			),
+			lightgray 0px -50.533px / 100% 108.975% no-repeat;
+	}
 }

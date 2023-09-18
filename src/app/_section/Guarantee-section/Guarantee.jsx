@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 
+import SubTitleDark from '@/components/SubTitleDark/SubTitleDark';
 import {
 	Box,
 	Button,
@@ -14,7 +15,6 @@ import {
 import useMediaQuery from '@/hooks/useMediaQuery';
 
 import FiveDesktop from './SVG/FiveDesktop';
-import Five from './SVG/FiveMobile';
 import FiveMobile from './SVG/FiveMobile';
 
 const Guarantee = () => {
@@ -28,17 +28,10 @@ const Guarantee = () => {
 				gap='6'
 				className='gap-3 sm:ml-4 sm:w-1/2 sm:items-baseline md:ml-10'
 			>
-				<Text
-					as='p'
-					bgColor='blackAlpha.300'
-					fontWeight='semibold'
-					rounded='40px'
-					py='1.5'
-					px='3.5'
-					className='sm:text-sm'
-				>
-					на всю нашу продукцию
-				</Text>
+				<SubTitleDark
+					text='на всю нашу продукцию'
+					className='bg-black/10'
+				/>
 				<Heading
 					as='h2'
 					fontSize='5xl'

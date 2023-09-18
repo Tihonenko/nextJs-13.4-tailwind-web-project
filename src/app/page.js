@@ -1,7 +1,19 @@
-import Automatical from './_section/Automatical/Automatical';
-import Functionality from './_section/Functionality-section/Functionality';
-import Guarantee from './_section/Guarantee-section/Guarantee';
-import HeroSection from './_section/Hero-section/HeroSection';
+import {
+	Box,
+	Button,
+	Center,
+	Flex,
+	Heading,
+	Text,
+} from '@/components/chakraUI/proxy/proxyChakra';
+
+import {
+	Automatical,
+	Functionality,
+	Guarantee,
+	HeroSection,
+	Switches,
+} from './_section';
 
 export default async function Home() {
 	return (
