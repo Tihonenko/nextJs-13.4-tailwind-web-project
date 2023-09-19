@@ -21,9 +21,11 @@ const Guarantee = () => {
 	const isAboveSmallQuery = useMediaQuery('(min-width: 640px)');
 
 	return (
-		<Flex className='relative mt-20 h-[755px] flex-col  overflow-hidden rounded-[30px] pb-5 pt-6 sm:h-auto sm:flex-row '>
+		<Flex
+			as='section'
+			className='relative mt-20 h-[755px] flex-col  overflow-hidden rounded-[30px] pb-5 pt-6 sm:h-auto sm:flex-row '
+		>
 			<Center
-				as='section'
 				flexDirection='column'
 				gap='6'
 				className='gap-3 sm:ml-4 sm:w-1/2 sm:items-baseline md:ml-10'

@@ -31,18 +31,21 @@ const subTitleData = [
 const Switches = () => {
 	return (
 		<Center className='bg-[#212121] pt-20' flexDirection='column'>
-			<Heading w='full' textAlign='center' color='white'>
+			<Heading textAlign='center' className='heading'>
 				Выключатели
 			</Heading>
 			<Text textAlign='center' className='mt-2 text-base leading-5'>
 				Это классические выключатели. Почти классические. На одну кнопку
 				можно разместить Десятки действий.
 			</Text>
-			<Center flexDirection='column' className='mt-4 gap-2'>
+			<Center
+				flexDirection='column'
+				className='mt-4 gap-2 lg:w-2/5 lg:flex-row lg:flex-wrap'
+			>
 				{subTitleData.map((item, idx) => (
 					<SubTitleDark
 						key={idx}
-						className='bg-[#E6E6E633] text-sm'
+						className='bg-[#E6E6E633] text-sm '
 						text={item.text}
 					/>
 				))}

@@ -55,4 +55,8 @@ html {
 			),
 			lightgray 0px -50.533px / 100% 108.975% no-repeat;
 	}
+
+	.heading {
+		@apply w-full text-white;
+	}
 }

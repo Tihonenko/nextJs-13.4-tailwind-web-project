@@ -1,6 +1,6 @@
 'use client';
 
-import { Switches } from '..';
+import { Application, Switches } from '..';
 import Image from 'next/image';
 import { useSelector } from 'react-redux';
 
@@ -71,6 +71,7 @@ const Automatical = () => {
 					/>
 				</Box>
 				<Switches />
+				<Application />
 			</Flex>
 		</>
 	);
