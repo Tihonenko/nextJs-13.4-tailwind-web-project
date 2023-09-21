@@ -28,7 +28,7 @@ const Automatical = () => {
 				<Flex
 					flexDirection='column'
 					alignItems='start'
-					className='mx-[10px] mt-10 w-5/6'
+					className='mx-[10px] mt-10 w-5/6 xl:mx-10'
 				>
 					<Heading
 						as='h3'
@@ -44,7 +44,7 @@ const Automatical = () => {
 						где вам они необходимы
 					</Text>
 				</Flex>
-				<Box className='mx-[10px] mt-12'>
+				<Box className='mx-[10px] mt-12 xl:mx-10'>
 					<Flex>
 						<Flex className='flex-col pb-10 lg:flex-row'>
 							<IfMove data={data.slice(0, 1)} lable='Если' />
@@ -54,24 +54,28 @@ const Automatical = () => {
 						</Flex>
 					</Flex>
 				</Box>
-				<Box className='absolute top-40 -z-30 scale-150 bg-gradient-to-t from-black lg:hidden'>
+				<Box className='absolute -z-30 h-full  w-full  bg-gradient-to-t from-black  lg:hidden'>
 					<Image
 						src='/home/AutomMobile.png'
 						width={1000}
 						height={2075}
 						alt='background'
+						className='h-1/2 w-full bg-cover object-cover md:h-auto'
 					/>
 				</Box>
-				<Box className='gradient_dark absolute top-0 -z-30 hidden scale-150 lg:block'>
+				<Box className='gradient_dark absolute  -z-30 hidden h-full w-full  lg:block'>
 					<Image
 						src='/home/AutomDesktop.png'
 						width={4000}
 						height={2000}
 						alt='background'
+						className='h-1/3 w-full bg-cover object-cover'
 					/>
 				</Box>
 				<Switches />
 				<Application />
+				<Box className='radial_gradient  absolute bottom-1/3 left-1/4 -z-20 hidden h-1/2 w-1/2 animate-pulse lg:block' />
+				<Box className='gradient_bg absolute bottom-0 left-0 -z-20 hidden h-1/2 w-full lg:block' />
 			</Flex>
 		</>
 	);

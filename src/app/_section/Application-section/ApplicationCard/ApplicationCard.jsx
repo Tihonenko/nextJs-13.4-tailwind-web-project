@@ -17,8 +17,10 @@ const ApplicationCard = ({ card }) => {
 				<Image
 					src={`/home/${card.imgName}.png`}
 					alt={card.imgName}
-					width={600}
+					width={1000}
 					height={600}
+					objectFit='cover'
+					className='h-full w-full bg-cover object-cover'
 				/>
 			</Box>
 			<Box className={styles.app_card_phone}>

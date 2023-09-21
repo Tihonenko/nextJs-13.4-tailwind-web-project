@@ -15,11 +15,7 @@ export const navData = [
 		link: '#price',
 		label: 'Услуги и цены',
 	},
-	{
-		id: 4,
-		link: '#project',
-		label: 'Проекты',
-	},
+
 	{
 		id: 5,
 		link: '#about',

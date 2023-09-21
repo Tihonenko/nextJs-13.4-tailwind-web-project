@@ -39,7 +39,7 @@ const cardData = [
 
 const Application = () => {
 	return (
-		<Box className='bg-[#212121] pt-5'>
+		<Box className='relative py-10 pt-5'>
 			<Heading as='h2' className='heading' textAlign='center'>
 				Приложение
 			</Heading>
@@ -48,6 +48,7 @@ const Application = () => {
 					<ApplicationCard key={idx} card={card} />
 				))}
 			</Center>
+			<Box className='absolute bottom-0 left-0 -z-30 h-full w-full bg-[#212121]' />
 		</Box>
 	);
 };

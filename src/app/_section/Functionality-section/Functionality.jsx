@@ -7,8 +7,6 @@ import {
 	Text,
 } from '@/components/chakraUI/proxy/proxyChakra';
 
-import useMediaQuery from '@/hooks/useMediaQuery';
-
 import ClimateCard from './_components/ClimateCard/ClimateCard';
 import CurtainsCard from './_components/CurtainsCard/CurtainsCard';
 import ElectrCard from './_components/ElectrCard/ElectrCard';
@@ -19,13 +17,7 @@ import styles from './functionality.module.scss';
 
 const Functionality = () => {
 	return (
-		<Center
-			display={'block'}
-			as='section'
-			id='functionality'
-			mt={'90px'}
-			className='font-main'
-		>
+		<Center id='functionality' className='mt-20 block font-main'>
 			<Flex flexDirection={'column'} alignItems={'center'} gap={'20px'}>
 				<SubTitle>функционал</SubTitle>
 				<Flex flexDirection={'column'} gap={'10px'}>

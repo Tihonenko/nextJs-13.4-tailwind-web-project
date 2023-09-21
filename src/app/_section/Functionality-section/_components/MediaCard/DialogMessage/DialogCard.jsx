@@ -1,10 +1,20 @@
+import { motion } from 'framer-motion';
+
 import { Box, Text } from '@/components/chakraUI/proxy/proxyChakra';
 
 import styles from './dialog.module.scss';
 
-const DialogCard = ({ textFirst, textSecond, right, top }) => {
+const DialogCard = ({
+	textFirst,
+	textSecond,
+	right,
+	top,
+	variants,
+	custom,
+}) => {
+	const MotionBox = motion(Box);
 	return (
-		<Box
+		<MotionBox
 			py='10px'
 			position='absolute'
 			top={top}
@@ -15,12 +25,14 @@ const DialogCard = ({ textFirst, textSecond, right, top }) => {
 			roundedTop='30px'
 			roundedBottomLeft='30px'
 			height='50px'
-			className={`${styles.dialog_card} `}
+			className={`${styles.dialog_card}`}
+			variants={variants}
+			custom={custom}
 		>
 			<Text fontSize='sm' wordBreak='keep-all' lineHeight='4'>
 				{textFirst} <br /> {textSecond}
 			</Text>
-		</Box>
+		</MotionBox>
 	);
 };
 

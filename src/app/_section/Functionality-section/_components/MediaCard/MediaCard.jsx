@@ -16,6 +16,24 @@ import styles from '../../functionality.module.scss';
 
 import DialogCard from './DialogMessage/DialogCard';
 
+const cardVariants = {
+	offscreen: {
+		y: 50,
+		opacity: 0,
+	},
+	onscreen: (custom) => ({
+		y: 0,
+		opacity: 1,
+		transition: {
+			ease: 'easeInOut',
+
+			stiffness: 75,
+			duration: 1,
+			delay: custom * 0.5,
+		},
+	}),
+};
+
 const dialogText = [
 	{
 		textFirst: 'Доброе утро!',
@@ -39,7 +57,12 @@ const dialogText = [
 
 const MediaCard = () => {
 	return (
-		<Flex as='div' flexDirection={'column'} mt='40px' className='lg:mx-20'>
+		<motion.div
+			initial='offscreen'
+			whileInView='onscreen'
+			viewport={{ once: true, amount: 0.8 }}
+			className='mt-10 flex flex-col lg:mx-20'
+		>
 			<Box className={styles.card} zIndex='-30'>
 				<Box className={styles.card_list} mb='25px'>
 					<Heading className={styles.card_h4} as='h4'>
@@ -62,6 +85,8 @@ const MediaCard = () => {
 							top={item.top}
 							textFirst={item.textFirst}
 							textSecond={item.textSecond}
+							variants={cardVariants}
+							custom={idx}
 						/>
 					))}
 				</Box>
@@ -74,7 +99,7 @@ const MediaCard = () => {
 					/>
 				</Box>
 			</Box>
-		</Flex>
+		</motion.div>
 	);
 };
 

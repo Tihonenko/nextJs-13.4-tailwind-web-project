@@ -1,12 +1,14 @@
 'use client';
 
 import { AnimatePresence, motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import { Logo } from '@/components/UI/Logo/Logo';
 import {
 	CloseIcon,
+	Flex,
 	HamburgerIcon,
+	PhoneIcon,
 } from '@/components/chakraUI/proxy/proxyChakra';
 
 import { NavLink } from '../NavLink';
@@ -122,6 +124,10 @@ export const Burger = ({ navData }) => {
 							))}
 					</AnimatePresence>
 				</ul>
+				<Flex gap='8px' mt='18px' alignItems='center'>
+					<PhoneIcon as='svg' />
+					<p className='block'>+7 495 189-69-67</p>
+				</Flex>
 			</motion.div>
 		</>
 	);

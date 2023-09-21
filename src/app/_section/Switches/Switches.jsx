@@ -30,11 +30,14 @@ const subTitleData = [
 
 const Switches = () => {
 	return (
-		<Center className='bg-[#212121] pt-20' flexDirection='column'>
+		<Center className='pt-20' flexDirection='column' position='relative'>
 			<Heading textAlign='center' className='heading'>
 				Выключатели
 			</Heading>
-			<Text textAlign='center' className='mt-2 text-base leading-5'>
+			<Text
+				textAlign='center'
+				className='mt-2 max-w-3xl text-base leading-5'
+			>
 				Это классические выключатели. Почти классические. На одну кнопку
 				можно разместить Десятки действий.
 			</Text>
@@ -51,7 +54,7 @@ const Switches = () => {
 				))}
 			</Center>
 			<Flex>
-				<Flex className='mt-10 flex-wrap gap-5'>
+				<Center className='mt-10 flex-wrap gap-5'>
 					<Image
 						src='/logo/basalte.png'
 						width={160}
@@ -67,8 +70,9 @@ const Switches = () => {
 						height={46}
 						alt='lutron'
 					/>
-				</Flex>
+				</Center>
 			</Flex>
+			<Box className='absolute left-0 top-0 -z-30 h-full w-full bg-[#212121] md:top-14' />
 		</Center>
 	);
 };
