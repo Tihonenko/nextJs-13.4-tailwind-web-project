@@ -23,7 +23,7 @@ const Automatical = () => {
 				as='section'
 				id='control'
 				textColor='#fff'
-				className='relative mx-auto mt-120 flex-col overflow-hidden rounded-t-[20px] sm:w-3/5 lg:w-full'
+				className='relative mx-auto mt-120 flex-col overflow-hidden rounded-[20px] sm:w-3/5 lg:w-full'
 			>
 				<Flex
 					flexDirection='column'
@@ -75,7 +75,7 @@ const Automatical = () => {
 				<Switches />
 				<Application />
 				<Box className='radial_gradient  absolute bottom-1/3 left-1/4 -z-20 hidden h-1/2 w-1/2 animate-pulse lg:block' />
-				<Box className='gradient_bg absolute bottom-0 left-0 -z-20 hidden h-1/2 w-full lg:block' />
+				<Box className='gradient_bg absolute bottom-0 left-0 -z-20 hidden h-1/2 w-full blur-2xl lg:block' />
 			</Flex>
 		</>
 	);

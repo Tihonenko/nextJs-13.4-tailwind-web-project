@@ -1,3 +1,4 @@
+import AboutUs from './AboutUs/AboutUs';
 import Application from './Application-section/Application';
 import Automatical from './Automatical/Automatical';
 import Functionality from './Functionality-section/Functionality';
@@ -12,4 +13,5 @@ export {
 	HeroSection,
 	Switches,
 	Application,
+	AboutUs,
 };

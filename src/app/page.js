@@ -8,6 +8,7 @@ import {
 } from '@/components/chakraUI/proxy/proxyChakra';
 
 import {
+	AboutUs,
 	Automatical,
 	Functionality,
 	Guarantee,
@@ -22,6 +23,7 @@ export default async function Home() {
 			<Functionality />
 			<Guarantee />
 			<Automatical />
+			<AboutUs />
 		</>
 	);
 }
