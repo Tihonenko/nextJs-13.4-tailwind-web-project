@@ -19,7 +19,6 @@ const ApplicationCard = ({ card }) => {
 					alt={card.imgName}
 					width={1000}
 					height={600}
-					objectFit='cover'
 					className='h-full w-full bg-cover object-cover'
 				/>
 			</Box>
