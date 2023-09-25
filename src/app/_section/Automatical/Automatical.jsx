@@ -45,6 +45,7 @@ const Automatical = () => {
 					</Text>
 				</Flex>
 				<Box className='mx-[10px] mt-12 xl:mx-10'>
+					{/* LINE TEXT ЕСЛИ И ДЕЙСТВИЕ */}
 					<Flex>
 						<Flex className='flex-col pb-10 lg:flex-row'>
 							<IfMove data={data.slice(0, 1)} lable='Если' />
@@ -54,6 +55,7 @@ const Automatical = () => {
 						</Flex>
 					</Flex>
 				</Box>
+				{/* BG IMAGE */}
 				<Box className='absolute -z-30 h-full  w-full  bg-gradient-to-t from-black  lg:hidden'>
 					<Image
 						src='/home/AutomMobile.png'
@@ -72,8 +74,10 @@ const Automatical = () => {
 						className='h-1/3 w-full bg-cover object-cover'
 					/>
 				</Box>
+				{/* TWO LAST SECTION */}
 				<Switches />
 				<Application />
+				{/* BG ON LAST SECTION */}
 				<Box className='radial_gradient  absolute bottom-1/3 left-1/4 -z-20 hidden h-1/2 w-1/2 animate-pulse lg:block' />
 				<Box className='gradient_bg absolute bottom-0 left-0 -z-20 hidden h-1/2 w-full blur-2xl lg:block' />
 			</Flex>

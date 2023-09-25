@@ -25,6 +25,7 @@ const Guarantee = () => {
 			as='section'
 			className='relative mt-20 h-[755px] flex-col  overflow-hidden rounded-[30px] pb-5 pt-6 sm:h-auto sm:flex-row '
 		>
+			{/* TITLE AND TEXT */}
 			<Center
 				flexDirection='column'
 				gap='6'
@@ -57,9 +58,13 @@ const Guarantee = () => {
 				</Text>
 				<Button className='button-price'>Рассчитать стоимость</Button>
 			</Center>
+
+			{/* IMAGE SVG ON LEFT */}
 			<Box className='-z-10 sm:absolute  sm:-right-20 sm:-top-6 sm:-translate-x-0 sm:rotate-[2deg] sm:scale-[.85] md:rotate-0'>
 				{isAboveSmallQuery ? <FiveDesktop /> : <FiveMobile />}
 			</Box>
+
+			{/* BG IMAGE */}
 			<Box className='guarantee_image_box'>
 				<Image
 					src='/home/GuaranteeMobile.png'

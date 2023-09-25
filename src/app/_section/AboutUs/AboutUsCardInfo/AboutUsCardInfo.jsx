@@ -14,7 +14,7 @@ const AboutUsCardInfo = ({ info }) => {
 				fontSize='48px'
 				fontWeight='bold'
 				lineHeight='46px'
-				className='w-1/2 text-[#444] md:w-auto '
+				className='w-1/2 text-[#444] md:w-auto'
 			>
 				{info.count}
 			</Heading>

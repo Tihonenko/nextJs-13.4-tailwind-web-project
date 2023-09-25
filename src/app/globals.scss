@@ -70,6 +70,22 @@ html {
 		opacity: 0.2;
 	}
 
+	.background_form {
+		border-radius: 30px;
+		background: linear-gradient(
+				295deg,
+				rgba(0, 240, 255, 0) 39.93%,
+				rgba(0, 178, 255, 0.3) 98.3%
+			),
+			linear-gradient(
+				88deg,
+				rgba(255, 153, 0, 0) 32.28%,
+				rgba(255, 153, 0, 0.3) 102.7%
+			),
+			#e8e8e8;
+		backdrop-filter: blur(11px);
+	}
+
 	.radial_gradient {
 		border-radius: 1000px;
 		background: radial-gradient(
@@ -78,5 +94,19 @@ html {
 			rgba(189, 0, 255, 0) 100%
 		);
 		filter: blur(150.5px);
+	}
+
+	.heading_medium {
+		@apply text-3xl font-bold text-zinc-800 md:text-5xl;
+	}
+
+	.form_input {
+		@apply rounded-lg bg-white p-4 text-sm outline-none;
+
+		&:active,
+		&:focus {
+			@apply border-2 border-[#A4A4A4];
+			box-shadow: none;
+		}
 	}
 }

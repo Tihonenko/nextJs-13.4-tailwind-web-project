@@ -66,17 +66,13 @@ const HeroSection = () => {
 			id='home'
 			className='relative  mt-12 flex flex-col items-center overflow-hidden pt-16'
 		>
-			<Flex
-				as='div'
-				flexDirection={'column'}
-				alignItems={'center'}
-				gap={'32px'}
-			>
+			<Flex as='div' flexDirection='column' alignItems='center' gap='32px'>
+				{/* TITLE HERO SECTION */}
 				<Box as='div' className='flex flex-col items-center gap-3'>
 					<Heading
 						as='h1'
-						textAlign={'center'}
-						fontWeight={'bold'}
+						textAlign='center'
+						fontWeight='bold'
 						className='w-auto font-main text-5xl lg:text-[68px] lg:leading-[66px]'
 					>
 						Умный дом
@@ -87,8 +83,10 @@ const HeroSection = () => {
 						<br /> современной электрики
 					</Text>
 				</Box>
+				{/* CUSTOM BUTTON */}
 				<PriceButton>Расчитать стоймость</PriceButton>
 			</Flex>
+			{/* CHECKER ON IMAGE  */}
 			{card.map((card, idx) => (
 				<CardChecker
 					key={idx}
@@ -96,6 +94,7 @@ const HeroSection = () => {
 					card={card}
 				/>
 			))}
+			{/* MAIN IMAGE */}
 			<Box className='-z-10 hidden w-1/2  lg:flex lg:h-[700px] xl:h-[1000px]'>
 				<Image
 					src='/home/home.png'
@@ -104,8 +103,10 @@ const HeroSection = () => {
 					fill
 				/>
 			</Box>
+			{/* BG SECTION */}
 			<Box className='absolute top-0 -z-20  h-[75%] w-full rounded-3xl bg-[#EBE7E6] md:h-[85%]  lg:block lg:h-[95%]' />
 
+			{/* IMAGE MOBILE */}
 			<Image
 				src='/home/home.png'
 				className='md:h-3/4 md:w-3/4 lg:hidden'
@@ -113,7 +114,8 @@ const HeroSection = () => {
 				width={400}
 				height={445}
 			/>
-			<Box width={'full'} className='pb-2 lg:hidden'>
+			{/* SWIPER ON SMALL SCREEN */}
+			<Box width='full' className='pb-2 lg:hidden'>
 				<HeroSwiper />
 			</Box>
 		</Center>

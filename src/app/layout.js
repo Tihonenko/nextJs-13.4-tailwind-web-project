@@ -1,5 +1,6 @@
 import { Montserrat } from 'next/font/google';
 
+import Footer from '@/components/Footer/Footer';
 import Header from '@/components/Header/Header';
 
 import './globals.scss';
@@ -24,6 +25,7 @@ const RootLayout = ({ children }) => {
 				<Providers>
 					<Header />
 					<main className='container'>{children}</main>
+					<Footer />
 				</Providers>
 			</body>
 		</html>

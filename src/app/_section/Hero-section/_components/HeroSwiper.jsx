@@ -33,6 +33,7 @@ const HeroSwiper = () => {
 				},
 			}}
 		>
+			{/* ITEM SWIPER */}
 			{data.map((card, idx) => (
 				<SwiperSlide key={idx} className='pb-3'>
 					<CardSwiper card={card} />

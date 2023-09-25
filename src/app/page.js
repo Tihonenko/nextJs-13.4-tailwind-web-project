@@ -1,19 +1,12 @@
 import {
-	Box,
-	Button,
-	Center,
-	Flex,
-	Heading,
-	Text,
-} from '@/components/chakraUI/proxy/proxyChakra';
-
-import {
 	AboutUs,
 	Automatical,
+	DistShowroom,
 	Functionality,
 	Guarantee,
 	HeroSection,
-	Switches,
+	ShowroomForm,
+	ShowroomInvite,
 } from './_section';
 
 export default async function Home() {
@@ -24,6 +17,10 @@ export default async function Home() {
 			<Guarantee />
 			<Automatical />
 			<AboutUs />
+			<ShowroomInvite />
+			<ShowroomForm />
+			<DistShowroom />
+			{/* TODO Add form */}
 		</>
 	);
 }
