@@ -66,7 +66,7 @@ const AboutUs = () => {
 			</Center>
 			<Flex className='mt-10 flex-col gap-10 md:flex-row'>
 				{infoData.map((item, idx) => (
-					<AboutUsCardInfo info={item} />
+					<AboutUsCardInfo key={idx} info={item} />
 				))}
 			</Flex>
 			<Flex className='mt-10 flex-wrap justify-between gap-5 lg:flex-nowrap'>

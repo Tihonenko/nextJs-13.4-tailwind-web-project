@@ -123,4 +123,32 @@ html {
 			box-shadow: none;
 		}
 	}
+
+	.switch-gradient {
+		background: linear-gradient(
+				83deg,
+				#fbfeff 9.09%,
+				rgba(255, 255, 255, 0) 53.18%
+			),
+			lightgray 0% / cover no-repeat;
+	}
+
+	.bg-showroom-sensor {
+		border-radius: 30px;
+		background: linear-gradient(
+			289deg,
+			rgba(88, 227, 101, 0.3) -3.16%,
+			rgba(213, 255, 143, 0.3) 70.48%,
+			rgba(247, 255, 109, 0.3) 106.45%
+		);
+	}
+
+	.bg-showroom-lamp {
+		border-radius: 30px;
+		background: linear-gradient(
+			299deg,
+			rgba(249, 197, 171, 0.5) 18.04%,
+			rgba(255, 250, 234, 0.5) 95.08%
+		);
+	}
 }

@@ -21,10 +21,12 @@ export const metadata = {
 const RootLayout = ({ children }) => {
 	return (
 		<html lang='ru'>
-			<body className={`${montserrat.className} ${montserrat.variable}}`}>
+			<body
+				className={`${montserrat.className} ${montserrat.variable}} bg-[#EFEFEF]`}
+			>
 				<Providers>
 					<Header />
-					<main className='container'>{children}</main>
+					<main className='container '>{children}</main>
 					<Footer />
 				</Providers>
 			</body>

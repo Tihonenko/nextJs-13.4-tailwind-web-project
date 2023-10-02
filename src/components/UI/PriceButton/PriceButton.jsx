@@ -1,10 +1,11 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import styles from './priceButton.module.scss';
 
 export const PriceButton = ({ children }) => {
 	return (
-		<button className={styles.price_button}>
+		<Link href='/price' className={styles.price_button}>
 			<Image
 				src='/SVG/button-arrow-svg.svg'
 				alt='button'
@@ -14,6 +15,6 @@ export const PriceButton = ({ children }) => {
 			<p className='text-left text-base font-semibold text-white'>
 				{children}
 			</p>
-		</button>
+		</Link>
 	);
 };

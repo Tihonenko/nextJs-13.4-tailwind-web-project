@@ -9,7 +9,7 @@ import {
 	ShowroomInvite,
 } from './_section';
 
-export default async function Home() {
+const Home = () => {
 	return (
 		<>
 			<HeroSection />
@@ -20,7 +20,8 @@ export default async function Home() {
 			<ShowroomInvite />
 			<ShowroomForm />
 			<DistShowroom />
-			{/* TODO Add form */}
 		</>
 	);
-}
+};
+
+export default Home;

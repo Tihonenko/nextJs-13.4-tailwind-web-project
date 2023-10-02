@@ -9,26 +9,24 @@ export const navData = [
 		link: '#control',
 		label: 'Управление',
 	},
-
 	{
 		id: 3,
-		link: '#price',
-		label: 'Услуги и цены',
-	},
-
-	{
-		id: 5,
 		link: '#about',
 		label: 'О нас',
 	},
 	{
-		id: 6,
+		id: 4,
 		link: '#contact',
 		label: 'Контакты',
 	},
 	{
-		id: 7,
+		id: 5,
 		link: 'showroom',
 		label: 'Шоурум',
+	},
+	{
+		id: 6,
+		link: 'security',
+		label: 'Безопастность',
 	},
 ];

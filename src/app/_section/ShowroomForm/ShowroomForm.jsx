@@ -53,7 +53,7 @@ const ShowroomForm = () => {
 				</Heading>
 			</Center>
 
-			<form onSubmit={handleSubmit(onSubmit)}>
+			<form onSubmit={handleSubmit(onSubmit)} className='mt-10'>
 				<Center>
 					<Flex className='flex-col items-baseline justify-between gap-5 md:w-1/2 lg:w-auto lg:flex-row'>
 						<FormControl isInvalid={errors.name}>
