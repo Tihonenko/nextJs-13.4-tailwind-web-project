@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 import SubTitleDark from '@/components/SubTitleDark/SubTitleDark';
 import {
@@ -56,7 +57,9 @@ const Guarantee = () => {
 					Самая длительная гарантия на рынке <br /> и круглосуточная
 					поддержка по любым вопросам
 				</Text>
-				<Button className='button-price'>Рассчитать стоимость</Button>
+				<Link href='/price' className='button-price'>
+					Рассчитать стоимость
+				</Link>
 			</Center>
 
 			{/* IMAGE SVG ON LEFT */}

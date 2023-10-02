@@ -15,7 +15,7 @@ import {
 
 const Footer = () => {
 	return (
-		<Box as='footer' className='container my-20  text-gray-600'>
+		<Box id='#contact' as='footer' className='container my-20  text-gray-600'>
 			<Center className='flex-col gap-20 lg:flex-row lg:items-start lg:justify-between'>
 				<VStack className='items-center'>
 					<Image
